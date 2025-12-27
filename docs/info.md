@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+RISC-V instruction set architechture (ISA) is a highly customizble open standard platform. Its simplicity and modularity enables efficient design and optimization. This reduces development time and cost.
 
 ## How to test
 
-Explain how to use your project
+RISC-V will be connected to a MATLAB via Serial UART (or VGA), where you will be able to create test its arithmetic performance.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+PMOD VGA connection, Keyboard Connection, Mouse Connection
