@@ -4,9 +4,9 @@
 # defaults
 SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
-TOPLEVEL_LANG ?= systemverilog
+TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = src/tt_um_risc_v_processor_davidagn05.sv
+PROJECT_SOURCES = sillyfunction.sv
 
 ifneq ($(GATES),yes)
 
@@ -33,8 +33,8 @@ endif
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.sv
-TOPLEVEL = tb
+VERILOG_SOURCES += $(PWD)/testbench3.sv
+TOPLEVEL = testbench3
 
 # List test modules to run, separated by commas and without the .py suffix:
 COCOTB_TEST_MODULES = test
